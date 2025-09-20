@@ -2,22 +2,379 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSSは必ずlinkタグで読み込む -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alto Creativeは、リサーチから制作・運用までワンストップで支援するデジタル制作スタジオです。成果につながるWebサイトとプロダクトを提供します。">
   <link rel="stylesheet" href="style.css">
-  <title>練習</title>
+  <title>Alto Creative | Web制作と運用支援</title>
 </head>
-<body>  
-  <h1>練習</h1>
-  <p>これは練習用のHTMLファイルです。</p>
-  <p>内容を自由に変更してください。</p>
-  <p>新しい段落を追加しました。</p>
-  <p>さらに別の段落も追加しました。</p>
-  <p>最後の段落です。</p>
-  <p>apple</p>
-  <p>ant</p>
-  <p>asics</p>
-  <p>amazon</p>
-  <p>alt</p>
+<body>
+  <a class="skip-link" href="#main">メインコンテンツへ移動</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Alto Creative</a>
+      <nav class="main-nav" aria-label="主要ナビゲーション">
+        <ul>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#works">制作実績</a></li>
+          <li><a href="#process">進め方</a></li>
+          <li><a href="#pricing">料金</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <a class="button secondary" href="#contact">無料相談</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">ブランド＆プロダクト制作スタジオ</p>
+          <h1 id="hero-title">顧客体験を起点にしたWeb制作と運用で成果を最大化します</h1>
+          <p class="lead">BtoB / BtoC双方での豊富な支援実績をもとに、リサーチ・戦略設計・デザイン・開発・運用までワンストップで伴走します。高速な仮説検証と丁寧なコミュニケーションで、事業成長に直結するデジタル体験を形にします。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">無料相談を予約</a>
+            <a class="button ghost" href="#works">制作実績を見る</a>
+          </div>
+          <dl class="hero-stats" aria-label="主要指標">
+            <div>
+              <dt>143<span>件</span></dt>
+              <dd>累計プロジェクト支援数</dd>
+            </div>
+            <div>
+              <dt>92<span>%</span></dt>
+              <dd>リピート・継続率</dd>
+            </div>
+            <div>
+              <dt>2<span>週間</span></dt>
+              <dd>平均初稿提出スピード</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <p>ユーザーインタビュー</p>
+            <p>体験設計</p>
+            <p>UIデザイン</p>
+            <p>開発スプリント</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="services-title">提供サービス</h2>
+          <p>課題発見からローンチ後のグロースまで、ビジネスゴールに合わせて柔軟に支援します。専門領域を横断するチームが一貫して伴走することで、スピーディかつ品質の高い成果物を実現します。</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>UXリサーチ＆戦略設計</h3>
+            <p>ユーザーと市場を徹底的に理解し、プロジェクトの成功条件とロードマップを明確化します。</p>
+            <ul>
+              <li>ユーザーインタビュー / JTBD分析</li>
+              <li>競合分析・KPI設計</li>
+              <li>プロダクト／サービス戦略立案</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>ブランド・サイトデザイン</h3>
+            <p>体験価値とブランドらしさを両立するUI / UXデザインで、成果につながる導線を構築します。</p>
+            <ul>
+              <li>ブランドトーン＆メッセージ設計</li>
+              <li>Webサイト・LP・オウンドメディア制作</li>
+              <li>アクセシビリティ／パフォーマンス最適化</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Webアプリケーション開発</h3>
+            <p>最新のフロントエンド／バックエンド技術を組み合わせ、スケールしやすい堅牢な基盤を構築します。</p>
+            <ul>
+              <li>React / Vue / Next.js 等を活用した開発</li>
+              <li>ヘッドレスCMS・外部API連携</li>
+              <li>QA・E2Eテスト、自動デプロイ整備</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>運用・グロース支援</h3>
+            <p>リリース後もデータドリブンな改善とコンテンツ運用で、継続的な成果創出をサポートします。</p>
+            <ul>
+              <li>定例分析レポートと改善提案</li>
+              <li>SEO / コンテンツ企画・編集</li>
+              <li>マーケ／CSチームとの連携支援</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface" id="works" aria-labelledby="works-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="works-title">制作実績</h2>
+          <p>一部の公開可能なプロジェクトをご紹介します。各案件での成果指標と実施内容を合わせてご覧いただけます。</p>
+        </div>
+        <div class="works-grid">
+          <article class="case-study">
+            <div class="case-tag">SaaS</div>
+            <h3>プロジェクトFlowly</h3>
+            <p>複雑な業務フローを整理するBtoB SaaSのUI再設計。ユーザー調査にもとづき、オンボーディングを再構築しました。</p>
+            <ul>
+              <li>CVR 38%向上（トライアル申込）</li>
+              <li>主要タスク完了時間を40%短縮</li>
+              <li>プロダクトCSチームと共同改善</li>
+            </ul>
+          </article>
+          <article class="case-study">
+            <div class="case-tag">EC</div>
+            <h3>Organic Market</h3>
+            <p>D2C食品ブランドのブランド刷新とECサイト制作。ブランドストーリーを再定義し、リピート購入導線を強化しました。</p>
+            <ul>
+              <li>LTV 1.6倍 / リピート率 55%→72%</li>
+              <li>コンテンツマーケ支援・撮影ディレクション</li>
+              <li>Shopify＋ヘッドレス構成を導入</li>
+            </ul>
+          </article>
+          <article class="case-study">
+            <div class="case-tag">メディア</div>
+            <h3>Townlife Magazine</h3>
+            <p>地域密着型メディアのリニューアル。情報設計と検索性を高め、広告収益とユーザー満足度を両立。</p>
+            <ul>
+              <li>セッション数 2.3倍 / 滞在時間 1.8倍</li>
+              <li>アクセシビリティ AA 準拠</li>
+              <li>編集チーム向けCMS運用ガイド整備</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="process-title">プロジェクトの進め方</h2>
+          <p>フェーズごとに明確なゴールとアウトプットを設定し、関係者全員が意思決定しやすい進行を徹底します。</p>
+        </div>
+        <ol class="process-steps">
+          <li>
+            <div class="step-number">01</div>
+            <div>
+              <h3>理解を深めるディスカバリー</h3>
+              <p>現状の把握、課題の深掘り、プロジェクトゴールのすり合わせを短期間で行い、方向性を明確化します。</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">02</div>
+            <div>
+              <h3>体験設計とクリエイティブ制作</h3>
+              <p>リサーチ結果をもとにIA／ワイヤーフレームを作成し、トーン＆マナーを決定。UIデザインとコンテンツを磨き込みます。</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">03</div>
+            <div>
+              <h3>開発・品質保証</h3>
+              <p>モジュール化されたコンポーネントで開発し、パフォーマンス計測とQAを実施。公開前レビューで最終調整します。</p>
+            </div>
+          </li>
+          <li>
+            <div class="step-number">04</div>
+            <div>
+              <h3>運用とグロースの伴走</h3>
+              <p>ローンチ後もデータモニタリングと改善提案を継続。施策実行と振り返りサイクルを素早く回して成果最大化を支援します。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section surface" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="testimonials-title">お客さまの声</h2>
+          <p>事業責任者やマーケティングチームからいただいたフィードバックの一部をご紹介します。</p>
+        </div>
+        <div class="testimonial-grid">
+          <figure class="testimonial">
+            <blockquote>
+              企画段階から事業理解が深く、仮説検証のスピードが圧倒的でした。ローンチ後のデータ分析と改善提案も的確で、継続的な成果につながっています。
+            </blockquote>
+            <figcaption>
+              <span class="name">株式会社Lumen COO</span>
+              <span class="role">田中 翔太 様</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>
+              デザインだけでなくコンテンツ制作や開発体制まで一気通貫でサポートいただき、社内リソースが限られる中でも大きな施策を実現できました。
+            </blockquote>
+            <figcaption>
+              <span class="name">Brightwell Marketing</span>
+              <span class="role">マーケティングマネージャー 佐伯 美咲 様</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="pricing-title">料金プラン</h2>
+          <p>要件に合わせて柔軟にお見積りいたします。目安となるプランの概要をご確認ください。</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3>ライトプラン</h3>
+            <p class="price">¥480,000〜</p>
+            <p class="price-note">LP・キャンペーンサイトなど小規模案件向け</p>
+            <ul>
+              <li>リサーチワークショップ（1回）</li>
+              <li>デザイン＆実装（1〜3ページ）</li>
+              <li>公開後2週間のサポート</li>
+            </ul>
+          </article>
+          <article class="pricing-card popular">
+            <div class="badge">人気</div>
+            <h3>スタンダードプラン</h3>
+            <p class="price">¥980,000〜</p>
+            <p class="price-note">コーポレートサイト／サービスサイトに最適</p>
+            <ul>
+              <li>UXリサーチ＆戦略立案</li>
+              <li>5〜10ページのデザイン・実装</li>
+              <li>CMS構築・運用マニュアル</li>
+              <li>公開後1か月の伴走サポート</li>
+            </ul>
+          </article>
+          <article class="pricing-card">
+            <h3>グロースプラン</h3>
+            <p class="price">¥180,000〜 / 月</p>
+            <p class="price-note">継続改善・運用を伴走で支援</p>
+            <ul>
+              <li>月次分析レポートと改善提案</li>
+              <li>ABテスト / コンテンツ運用</li>
+              <li>開発・マーケチーム連携サポート</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surface" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="faq-title">よくある質問</h2>
+          <p>お問い合わせの多いご質問をまとめました。掲載以外の疑問点はお気軽にお問い合わせください。</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>制作のリードタイムはどれくらいですか？</summary>
+            <p>要件にもよりますが、LPで4〜6週間、コーポレートサイトで8〜12週間ほどが目安です。スケジュールに余裕がない場合もお気軽にご相談ください。</p>
+          </details>
+          <details>
+            <summary>すでに社内でデザインがあるのですが、実装だけ依頼できますか？</summary>
+            <p>はい、実装のみのご依頼も可能です。デザインデータやコンポーネント設計の状況をヒアリングし、効率的な進め方をご提案します。</p>
+          </details>
+          <details>
+            <summary>CMSや分析ツールの導入もお願いできますか？</summary>
+            <p>主要なヘッドレスCMSやMAツール、分析基盤との連携実績があります。ツール選定の相談から構築、社内向けのトレーニングまで対応します。</p>
+          </details>
+          <details>
+            <summary>継続的な運用体制が社内にないのですが、伴走してもらえますか？</summary>
+            <p>月次での定例ミーティングと改善サイクルをセットでご提供しています。社内チームの立ち上げや採用支援も一緒に行うケースが多いです。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="section-header">
+          <h2 id="contact-title">お問い合わせ・ご相談</h2>
+          <p>以下のフォームまたはメールにてお気軽にご連絡ください。1営業日以内に担当者からご返信いたします。</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form" action="https://formsubmit.co/placeholder" method="post">
+            <div class="form-field">
+              <label for="name">お名前</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">メールアドレス</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="company">会社名・部署</label>
+              <input id="company" name="company" type="text" autocomplete="organization">
+            </div>
+            <div class="form-field">
+              <label for="budget">ご予算の目安</label>
+              <select id="budget" name="budget">
+                <option value="未定">未定</option>
+                <option value="~50">〜50万円</option>
+                <option value="50-100">50〜100万円</option>
+                <option value="100-200">100〜200万円</option>
+                <option value="200+">200万円以上</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">ご相談内容</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <p class="privacy-note">送信ボタンを押すことで、プライバシーポリシーに同意したものとみなします。商用利用時は実際の送信先URLをご設定ください。</p>
+            <button class="button primary" type="submit">お問い合わせ内容を送信</button>
+          </form>
+          <div class="contact-info">
+            <div class="info-card">
+              <h3>直接のご連絡</h3>
+              <p><span>Mail:</span> <a href="mailto:hello@altocreative.jp">hello@altocreative.jp</a></p>
+              <p><span>Tel:</span> <a href="tel:+81312345678">03-1234-5678</a>（平日10:00〜18:00）</p>
+              <p><span>Office:</span> 東京都渋谷区代々木1-2-3 Creative BLDG 5F</p>
+            </div>
+            <div class="info-card">
+              <h3>資料請求・採用について</h3>
+              <p>コラボレーション、メディア取材、採用に関するお問い合わせもこちらから承っています。リモートでの打ち合わせにも対応しています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top">Alto Creative</a>
+        <p>データとクリエイティブの力で、ビジネスの成長を加速させるデジタルパートナーです。</p>
+      </div>
+      <div class="footer-nav">
+        <h3>メニュー</h3>
+        <ul>
+          <li><a href="#services">サービス</a></li>
+          <li><a href="#works">制作実績</a></li>
+          <li><a href="#process">進め方</a></li>
+          <li><a href="#pricing">料金</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="footer-cta">
+        <h3>資料ダウンロード</h3>
+        <p>サービス概要資料と制作事例をまとめたPDFをご用意しています。フォーム送信後に自動送付いたします。</p>
+        <a class="button secondary" href="#contact">資料を請求する</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-meta">
+        <small>© 2024 Alto Creative Inc. All rights reserved.</small>
+        <div class="footer-links">
+          <a href="#">利用規約</a>
+          <a href="#">プライバシーポリシー</a>
+          <a href="mailto:hello@altocreative.jp">お問い合わせ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
